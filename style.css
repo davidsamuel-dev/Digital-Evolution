@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Sora:wght@100;200;300;400;500;600;700;800&display=swap");
 :root {
-  --largura-m: 2500px;
+  --largura-m: 2200px;
   --gradiente: 90deg, #ff0000, #f66008;
   --gradient-click: 90deg, #ff00008a, #9b3b0491
 }
@@ -9,9 +9,12 @@
   margin: 0;
   font-family: "Sora", sans-serif;
 }
+body *{
+  /* border: 1px solid ; */
+}
 header {
   max-width: var(--largura-m);
-  height: 600px;
+  height: auto;
   margin: auto;
 }
 ul {
@@ -43,10 +46,11 @@ a{
   text-decoration: none;
   color: #000;
 }
-menu{
-  width: 100%;
+.menu{
+  /* width: 100%; */
   height: auto;
   box-sizing: border-box;
+  display: none;
 }
 ul > li >a> button {
   margin-top: -30px;
@@ -68,27 +72,31 @@ ul > li >a> button:active{
 }
 .logo>h2{
   color: #000077;
+  font-size: 1em;
 }
 .baner {
+  margin-top: 50px;
   position: relative;
   width: 100%;
-  height: 600px;
-  display: flex;
-  flex-direction: row;
-}
-.chamada {
-  padding: 0 80px;
+  height: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 3%;
-  width: 50%;
-  position: relative;
-  right: 0;
-  flex-grow: 2;
+  gap: 10px;
+  padding: 20px;
+  box-sizing: border-box;
+}
+.chamada {
+  /* padding: 0 80px; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  box-sizing: border-box;
+
 }
 .chamada > h1 {
-  font-size: 3.5em;
+  font-size: 2em;
   background: linear-gradient(var(--gradiente));
   display: inline-block;
   color: transparent;
@@ -98,11 +106,12 @@ ul > li >a> button:active{
 .chamada > p {
   color: #00000090;
   font-weight: 500;
-  font-size: 1.2em;
+  font-size: 1em;
 }
 .chamada > button {
   min-width: 150px;
-  max-width: 300px;
+  margin: 0 20px;
+  /* max-width: 300px; */
   border-radius: 5px;
   border: transparent;
   background: linear-gradient(var(--gradiente));
@@ -119,14 +128,17 @@ ul > li >a> button:active{
 
 }
 .cartaz {
-  width: 50%;
-  height: 600px;
-  flex-grow: 8;
-  display: flex;
-  justify-content: right;
+  box-sizing: border-box;
+  width: 100%;
+  height: auto;
 }
 .cartaz > img {
-  width: 600px;
+  width: 100%;
+}
+.section{
+  padding: 50px 0;
+  width: 100%;
+  height: auto;
 }
 main {
   max-width: var(--largura-m);
