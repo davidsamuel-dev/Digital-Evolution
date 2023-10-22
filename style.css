@@ -64,9 +64,19 @@ ul > li > a > button:active {
   background: linear-gradient(var(--gradient-click));
   cursor: pointer;
 }
+.logo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+.logo>img{
+  width: 40px;
+  margin-left: 10px;
+}
 .logo > h2 {
   color: var(--azul);
-  font-size: 1em;
+  font-size: 1.2em;
 }
 .baner {
   margin-top: 10px;
@@ -146,10 +156,14 @@ main {
 section {
   padding: 20px;
 }
+#chamada1>a>button{
+  margin: 10px;
+}
 #nossos {
   text-align: center;
   color: var(--azul);
   font-size: 1.6em;
+  margin-top: 50px;
 }
 .cards {
   width: 100%;
@@ -372,7 +386,7 @@ footer{
     flex-direction: row-reverse;
   }
   section{
-    margin: 100px 0;
+    margin: 50px 0;
     display: flex;
     flex-direction: row;
     gap: 100px;
@@ -417,17 +431,33 @@ footer{
     justify-content: space-around;
   }
   .card{
-    width: 250px;
-    height: 420px;
-    font-size: 1em;
+    width: 150px;
+    height: 320px;
+    font-size: 0.6em;
+
+  }
+  .card>a>button{
+    font-size: 1.1em;
   }
   
 
   
 }
-@media screen and (min-width: 1900px) {
+/* @media screen and (min-width: 1435px) {
+  .card:nth-last-child(-n + 1){
+    height: auto;
+    font-size: 1.4em;
+  }
+}
+@media screen and (min-width: 1700px) {
+  .card:nth-last-child(-n + 1){
+    height: 420px;
+    font-size: 1em;
+  }
+} */
+@media screen and (min-width: 2000px) {
   body{
-    /* font-size: 1.3em; */
+    font-size: 1.6em;
   }
   .baner>.chamada>h1{
     font-size: 3.2em;
