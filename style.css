@@ -87,9 +87,11 @@ ul > li > a > button:active {
   justify-content: center;
   gap: 20px;
   box-sizing: border-box;
+  overflow: hidden;
+}
+#chamada1{
   background-image: url("./arquivos/cartaz3.png");
   background-size: contain;
-  overflow: hidden;
 }
 .chamada > h1 {
   font-size: 2em;
