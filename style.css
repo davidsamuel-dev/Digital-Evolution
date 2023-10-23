@@ -18,10 +18,18 @@ header {
 ul {
   list-style: none;
   display: flex;
+  height: 100%;
 }
 li {
   margin: 0 15px;
+  display: flex;
+  align-items: center;
 }
+.menus{
+  display: flex;
+  align-items: center;
+}
+
 nav {
   max-width: var(--largura-m);
   margin: auto;
@@ -215,16 +223,16 @@ section {
   color: #fff;
   border: 1px solid #fff;
 }
-.card:hover > .card_header > #redes {
+.card:hover > .card_header > #sites {
   background-image: url("./arquivos/icons_branco/4.png");
 }
-.card:hover > .card_header > #sites {
+.card:hover > .card_header > #redes {
   background-image: url("./arquivos/icons_branco/5.png");
 }
 .card:hover > .card_header > #local {
   background-image: url("./arquivos/icons_branco/6.png");
 }
-.card:hover > .card_header > #email {
+.card:hover > .card_header > #criacao {
   background-image: url("./arquivos/icons_branco/7.png");
 }
 .card:hover > .card_header > #conteudo {
@@ -302,25 +310,27 @@ section > .chamada > h1 {
   color: #000077;
   border: 1px solid var(--azul);
 }
-#redes {
+#sites {
   background-image: url("./arquivos/icons/4.png");
 }
-#sites {
+#redes {
   background-image: url("./arquivos/icons/5.png");
 }
 #local {
   background-image: url("./arquivos/icons/6.png");
 }
-#email {
+#criacao {
   background-image: url("./arquivos/icons/7.png");
 }
 #conteudo {
   background-image: url("./arquivos/icons/8.png");
-  scale: 1.3;
+  /* scale: 1.3; */
 }
 #google {
   background-image: url("./arquivos/icons/9.png");
-  /* scale: 1.5; */
+  width: 80px;
+  height: 80px;
+  scale: 1.2;
   /* position: relative;
   top: 10px; */
 }
