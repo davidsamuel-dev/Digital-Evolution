@@ -185,6 +185,7 @@ ul > li > a > button:active {
 }
 .chamada > a>button {
   min-width: 150px;
+ 
   margin: 0 10px;
   border-radius: 5px;
   border: transparent;
@@ -432,9 +433,8 @@ footer{
   .baner>.chamada>h1{
     font-size: 2.5em;
   }
-  .chamada>button{
-    font-size: 0.1em;
-    margin: 10px;
+  .chamada>a>button{
+    max-width: 300px;
   }
   .menus{
     display: none;
