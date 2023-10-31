@@ -507,7 +507,7 @@ footer{
   .chamada>a>button{
     font-size: 0.8em;
     width: 400px;
-    padding: 10px;
+    padding: 15px 10px;
     border-radius: 10px;
   }
   .cards{
