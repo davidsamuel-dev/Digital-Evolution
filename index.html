@@ -9,7 +9,7 @@
     <link rel="shortcut icon" href="./arquivos/fav_icon.jpg" type="image/x-icon">
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    <script src=""></script>
+    <script src="script.js"></script>
 
 </head>
 
@@ -27,9 +27,25 @@
                 <li><a href=""><button>Entrar</button></a></li>
             </ul>
         </div>
-        <div class="menus" onclick="menu()">
-            <img style="scale: 1.5;" src="./arquivos/menu_FILL0_wght400_GRAD0_opsz24.png" alt="">
+        <div class="menus">
+            <img style="scale: 1.5;" src="./arquivos/menu_FILL0_wght400_GRAD0_opsz24.png" alt="" onclick="exibir_menu()">
         </div>
+        <aside id="menu_as">
+            <p id="voltar_menu"  onclick="voltar_menu()">voltar</p>
+            <div class="logo">
+                <h2>Digital evolution</h2>
+                <br><br>
+            </div>
+            <div class="menu">
+
+                <ul>
+                    <li><a href="#home"></a>Home</li><hr>
+                    <li>Contato</li><hr>
+                    <li><a href="#section2">Sobre nós</a></li><hr>
+                    <li><a href="#servicos">Serviços</a></li>
+                </ul>
+            </div>
+        </aside>
     </nav>
     <header id="home">
         <div class="baner">
